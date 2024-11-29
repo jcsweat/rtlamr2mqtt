@@ -21,8 +21,6 @@ COPY ./rtlamr2mqtt.py /usr/bin
 COPY ./requirements.txt /tmp
 COPY ./sdl_ids.txt /var/lib/
 
-RUN echo "deb http://deb.debian.org/debian bookworm main" > /etc/apt/sources.list
-
 RUN apt-get update \
     && apt-get install -o Dpkg::Options::="--force-confnew" -y \
       libusb-1.0-0 \
