@@ -1,3 +1,6 @@
+ENV http_proxy=http:...
+ENV https_proxy=http:...
+
 FROM golang:bullseye as go-builder
 
 WORKDIR /go/src/app
